@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<title>Testing Code</title>
+<script>
+function bigImg(x) {
+    x.style.height = "300px";
+    x.style.width = "300px";
+}
+
+function normalImg(x) {
+    x.style.height = "200px";
+    x.style.width = "200px";
+
+}
+var selectElem = document.getElementById('select')
+var pElem = document.getElementById('p')
+
+// When a new <option> is selected
+selectElem.addEventListener('change', function() {
+    var index = selectElem.selectedIndex;
+    // Add that data to the <p>
+    pElem.innerHTML = 'selectedIndex: ' + index;
+})
+</script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+        </div>
+        <div class="col-6">
+            <H1> Trve Cvlt Record Company </H1>
+            <p> your one stop shop for all your satanic black metal needs since '99 </p>
+        </div>
+        <div class="col">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="rottingchrist.jpeg" width="200" height="200">
+<H2> Rotting Christ-- the Heretics (wow--this sure is satanic) $14.99 </H2>
+<h3> select one: </h3> 
+<FONT FACE="Courier">
+<select>
+    <option value="--Select One--"</option>
+    <option value="CD">CD</option>
+    <option value="Cassette">Cassette</option>
+    <option value="Full Length LP">Full Length LP</option>
+</select><BR>
+</FONT>
+<BR><BR>
+        </div>
+        <div class="col">
+            <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="burzum.jpg" width="200" height="200">
+<H2> Burzum--Self-titled (special edition spooky man cover) $15.99 </H2>
+<h3> select one: </h3> 
+<FONT FACE="Courier">
+<select>
+    <option value="--Select One--"</option>
+    <option value="CD">CD</option>
+    <option value="Cassette">Cassette</option>
+    <option value="Full Length LP">Full Length LP</option>
+</select><BR>
+</FONT>
+<a class="btn btn-primary" href="forms/payment.html" role="button">Link</a>
+<BR><BR>
+        </div>
+        <div class="col">
+         <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="darkfuneral.jpg" width="200" height="200">
+<H2> Dark Funeral-- Diabolis Internum (its the DEVIL(super special secret edition)) $199.99 </H2>
+<h3> select one: </h3> 
+<select>
+    <option value="--Select One--"</option>
+    <option value="CD">CD</option>
+    <option value="Cassette">Cassette</option>
+    <option value="Full Length LP">Full Length LP</option>
+</select><BR>
+</FONT>
+<BR><BR>
+<a class="btn btn-primary" href="forms/payment.html" role="button">Link</a>
+        </div>
+    </div>
+
+</body>
+</html> 

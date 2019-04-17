@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Website Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style type="text/css">
+        body {
+            font-family: "Courier";
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-sm-6">
+                <H1> Finalize your Order </H1>
+                
+                
+                <form action="">
+                    <div class="form-group">
+                        <label>Name:</label>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <input type="text" name="first_name" id="first_name" class="form-control" placeholder="First Name">
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="text" name="last_name" id="last_name" class="form-control" placeholder="Last Name">
+                            </div>
+                        </div>
+                        <label>Address:</label>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <input type="text" name="address" id="address" class="form-control" placeholder="123 Street Rd.">
+                            </div>
+                        </div>
+                            <div class="row">
+                            <div class="col-sm-5">
+                                <label>City:</label>
+                            </div>
+                            <div class="col-sm-3">
+                                <label>State:</label>
+                            </div>
+                            <div class="col-sm-4">
+                                <label>Zip:</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-5">
+                                <input type="text" name="city" id="city" class="form-control" placeholder="Cityville">
+                            </div>
+                            <div class="col-sm-3">
+                               <form class="form-inline">
+                                 <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                                   <option selected>State</option>
+                                   <option value="AL">AL</option>
+                                    <option value="AK">AK</option>
+                                    <option value="AR">AR</option>  
+                                    <option value="AZ">AZ</option>
+                                    <option value="CA">CA</option>
+                                    <option value="CO">CO</option>
+                                    <option value="CT">CT</option>
+                                    <option value="DC">DC</option>
+                                    <option value="DE">DE</option>
+                                    <option value="FL">FL</option>
+                                    <option value="GA">GA</option>
+                                    <option value="HI">HI</option>
+                                    <option value="IA">IA</option>  
+                                    <option value="ID">ID</option>
+                                    <option value="IL">IL</option>
+                                    <option value="IN">IN</option>
+                                    <option value="KS">KS</option>
+                                    <option value="KY">KY</option>
+                                    <option value="LA">LA</option>
+                                    <option value="MA">MA</option>
+                                    <option value="MD">MD</option>
+                                    <option value="ME">ME</option>
+                                    <option value="MI">MI</option>
+                                    <option value="MN">MN</option>
+                                    <option value="MO">MO</option>  
+                                    <option value="MS">MS</option>
+                                    <option value="MT">MT</option>
+                                    <option value="NC">NC</option>  
+                                    <option value="NE">NE</option>
+                                    <option value="NH">NH</option>
+                                    <option value="NJ">NJ</option>
+                                    <option value="NM">NM</option>          
+                                    <option value="NV">NV</option>
+                                    <option value="NY">NY</option>
+                                    <option value="ND">ND</option>
+                                    <option value="OH">OH</option>
+                                    <option value="OK">OK</option>
+                                    <option value="OR">OR</option>
+                                    <option value="PA">PA</option>
+                                    <option value="RI">RI</option>
+                                    <option value="SC">SC</option>
+                                    <option value="SD">SD</option>
+                                    <option value="TN">TN</option>
+                                    <option value="TX">TX</option>
+                                    <option value="UT">UT</option>
+                                    <option value="VT">VT</option>
+                                    <option value="VA">VA</option>
+                                    <option value="WA">WA</option>
+                                    <option value="WI">WI</option>  
+                                    <option value="WV">WV</option>
+                                    <option value="WY">WY</option>
+                                 </select>
+                            </div>
+                            <div class="col-sm-4">
+                                <input type="text" name="zip_code" id="zip_code" class="form-control" placeholder="Zip Code">
+                            </div>
+                        </div>
+                         <label>Phone:</label>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <input type="text" name="phone" id="phone" class="form-control" placeholder="800-555-5555">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <a class="btn btn-primary" href="../index.html" role="button">Back To Shopping</a>
+                <a class="btn btn-primary" href="" role="button">Submit Order</a>
+            </div>
+        </div>
+    </div>
+    <BR><BR>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <SCRIPT>
+    if (validateText() == false)
+        {
+            alert("required data missing in Step 1");
+            return;
+        }
+    </SCRIPT>
+</body>
+</html>
